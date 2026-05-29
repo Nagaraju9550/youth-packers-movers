@@ -25,7 +25,6 @@ line-height:1.6;
 }
 
 /* HEADER */
-
 header{
 background:
 linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
@@ -44,7 +43,6 @@ padding:20px;
 .hero h1{
 font-size:65px;
 margin-bottom:20px;
-font-weight:700;
 }
 
 .hero p{
@@ -69,7 +67,6 @@ transform:scale(1.05);
 }
 
 /* SECTIONS */
-
 section{
 padding:80px 10%;
 }
@@ -83,7 +80,6 @@ font-weight:700;
 }
 
 /* ABOUT */
-
 .about{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -94,16 +90,14 @@ align-items:center;
 .about img{
 width:100%;
 border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.15);
 }
 
 .about h2{
-margin-bottom:20px;
 color:#ff6600;
+margin-bottom:15px;
 }
 
 /* SERVICES */
-
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -114,23 +108,11 @@ gap:30px;
 background:white;
 padding:35px;
 border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
 text-align:center;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card h3{
-margin:20px 0;
-color:#ff6600;
-font-size:24px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 /* GALLERY */
-
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -142,22 +124,16 @@ width:100%;
 height:260px;
 object-fit:cover;
 border-radius:20px;
-transition:0.3s;
 }
 
-.gallery img:hover{
-transform:scale(1.03);
-}
-
-/* QUOTE FORM */
-
+/* FORM */
 .quote-form{
 background:white;
 padding:45px;
 border-radius:25px;
-box-shadow:0 5px 25px rgba(0,0,0,0.12);
 max-width:700px;
 margin:auto;
+box-shadow:0 5px 25px rgba(0,0,0,0.12);
 }
 
 .quote-form input,
@@ -165,108 +141,74 @@ margin:auto;
 width:100%;
 padding:16px;
 margin:12px 0;
-border:1px solid #ccc;
 border-radius:12px;
-font-size:16px;
-outline:none;
-}
-
-.quote-form input:focus,
-.quote-form textarea:focus{
-border-color:#ff6600;
+border:1px solid #ccc;
 }
 
 .quote-form button{
 width:100%;
 padding:16px;
 background:#25D366;
-border:none;
 color:white;
+border:none;
 font-size:18px;
 border-radius:12px;
 cursor:pointer;
-font-weight:600;
-transition:0.3s;
-}
-
-.quote-form button:hover{
-background:#1ebe5d;
 }
 
 /* FOOTER */
-
 footer{
 background:#0b1f3a;
 color:white;
+text-align:center;
 padding:40px;
+}
+
+/* FLOAT BUTTONS */
+.floating-buttons{
+position:fixed;
+right:20px;
+bottom:20px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.call-btn, .whatsapp-btn{
+padding:15px 18px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:600;
 text-align:center;
 }
 
-footer h2{
-margin-bottom:15px;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.about{
-grid-template-columns:1fr;
-}
-
-.section-title{
-font-size:32px;
-}
-
-}
+.call-btn{background:#0b1f3a;}
+.whatsapp-btn{background:#25D366;}
 
 </style>
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
-
 <header>
-
 <div class="hero">
-
 <h1>Youth Packers and Movers</h1>
-
 <p>Safe • Fast • Trusted Relocation Services</p>
-
 <a href="#quote" class="btn">Get Free Quote</a>
-
 </div>
-
 </header>
 
-<!-- ABOUT -->
-
 <section>
-
 <h2 class="section-title">About Us</h2>
 
 <div class="about">
-
 <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200">
 
 <div>
-
 <h2>Professional Moving Services</h2>
-
 <p>
-Youth Packers and Movers provides trusted house shifting,
-office relocation, packing and transportation services across India.
-We ensure safe delivery with professional handling and affordable pricing.
+Youth Packers and Movers provides safe and reliable shifting services across India.
 </p>
 
 <br>
@@ -274,128 +216,90 @@ We ensure safe delivery with professional handling and affordable pricing.
 <h3>Owner:</h3>
 <p>Lachannagari Srinivasulu</p>
 
-<br>
-
 <h3>Phone:</h3>
 <p>6309722486</p>
 
-<br>
-
-<p>
-We provide:
-✔ House Shifting  
-✔ Office Relocation  
-✔ Vehicle Transport  
-✔ Packing & Unpacking  
-✔ Loading & Unloading
-</p>
+<h3>Email:</h3>
+<p>ssrinivasulu550@gmail.com</p>
 
 </div>
-
 </div>
-
 </section>
 
-<!-- SERVICES -->
-
 <section>
-
 <h2 class="section-title">Our Services</h2>
 
 <div class="services">
 
 <div class="card">
 <h3>House Shifting</h3>
-<p>Safe and secure household relocation services.</p>
+<p>Safe home relocation services.</p>
 </div>
 
 <div class="card">
 <h3>Office Relocation</h3>
-<p>Professional office and commercial shifting services.</p>
+<p>Fast corporate shifting services.</p>
 </div>
 
 <div class="card">
 <h3>Vehicle Transport</h3>
-<p>Bike and car transportation with complete safety.</p>
+<p>Bike & car safe transport.</p>
 </div>
 
 <div class="card">
 <h3>Packing Services</h3>
-<p>Premium packing materials with expert handling.</p>
+<p>Professional packing solutions.</p>
 </div>
 
 </div>
-
 </section>
 
-<!-- GALLERY -->
-
 <section>
-
 <h2 class="section-title">Gallery</h2>
 
 <div class="gallery">
-
 <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200">
-
 <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200">
-
 <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200">
-
 <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200">
-
 </div>
-
 </section>
 
-<!-- QUOTE FORM -->
-
 <section id="quote">
-
 <h2 class="section-title">Get Free Quote</h2>
 
 <div class="quote-form">
 
 <input type="text" id="name" placeholder="Your Name">
-
 <input type="tel" id="phone" placeholder="Phone Number">
-
-<input type="text" id="from" placeholder="Moving From">
-
-<input type="text" id="to" placeholder="Moving To">
-
+<input type="text" id="from" placeholder="From">
+<input type="text" id="to" placeholder="To">
 <input type="date" id="date">
+<textarea id="details" placeholder="Details"></textarea>
 
-<textarea id="details" rows="5" placeholder="Enter shifting details"></textarea>
+<button onclick="sendWhatsApp()">Send on WhatsApp</button>
 
-<button onclick="sendWhatsApp()">
-Send on WhatsApp
-</button>
+</div>
+</section>
+
+<footer>
+<h2>Youth Packers and Movers</h2>
+<p>Phone: 6309722486</p>
+<p>Email: ssrinivasulu550@gmail.com</p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<!-- FLOAT BUTTONS -->
+<div class="floating-buttons">
+
+<a href="tel:6309722486" class="call-btn">📞 Call</a>
+
+<a href="https://wa.me/916309722486" target="_blank" class="whatsapp-btn">💬 WhatsApp</a>
 
 </div>
 
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-<h2>Youth Packers and Movers</h2>
-
-<p>Owner: Lachannagari Srinivasulu</p>
-
-<p>Phone: 6309722486</p>
-
-<p>© 2026 All Rights Reserved</p>
-
-</footer>
-
-<!-- WHATSAPP SCRIPT -->
-
 <script>
-
 function sendWhatsApp(){
-
 let name=document.getElementById("name").value;
 let phone=document.getElementById("phone").value;
 let from=document.getElementById("from").value;
@@ -403,22 +307,12 @@ let to=document.getElementById("to").value;
 let date=document.getElementById("date").value;
 let details=document.getElementById("details").value;
 
-let message=
-`New Quote Request:%0A
-Name: ${name}%0A
-Phone: ${phone}%0A
-Moving From: ${from}%0A
-Moving To: ${to}%0A
-Preferred Date: ${date}%0A
-Details: ${details}`;
+let msg=`New Quote:%0AName:${name}%0APhone:${phone}%0AFrom:${from}%0ATo:${to}%0ADate:${date}%0ADetails:${details}`;
 
-let whatsappURL=
-`https://wa.me/916309722486?text=${message}`;
+let url=`https://wa.me/916309722486?text=${msg}`;
 
-window.open(whatsappURL,'_blank');
-
+window.open(url,'_blank');
 }
-
 </script>
 
 </body>
