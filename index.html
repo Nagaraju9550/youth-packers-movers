@@ -44,6 +44,11 @@
       --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
     /* RESET */
     * {
       margin: 0;
@@ -57,7 +62,6 @@
       background-color: var(--bg-main);
       color: var(--text-main);
       line-height: 1.6;
-      overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -1237,6 +1241,152 @@
       }
       100% {
         left: 100%;
+      }
+    }
+    /* MOBILE RESPONSIVE MEDIA QUERIES */
+    @media (max-width: 950px) {
+      section {
+        padding: 60px 24px 40px 24px;
+      }
+      .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+      }
+      .hero-description {
+        margin: 0 auto 30px auto;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      .hero-bullets {
+        justify-content: center;
+      }
+      .navbar {
+        padding: 16px 24px;
+      }
+      .stats-container {
+        padding: 0 24px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 40px 16px 30px 16px;
+      }
+      .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+      }
+      .hero-title {
+        font-size: 2.1rem;
+        margin-bottom: 15px;
+      }
+      .hero-description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+      .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+      .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+      }
+      .hero-bullets {
+        gap: 12px;
+      }
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 24px 16px;
+      }
+      .stat-number {
+        font-size: 1.85rem;
+      }
+      .stat-label {
+        font-size: 0.75rem;
+      }
+      .form-card {
+        padding: 24px 16px;
+      }
+      .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .form-group.full-width {
+        grid-column: span 1;
+      }
+      .form-control {
+        padding: 12px 12px 12px 38px;
+        font-size: 0.9rem;
+      }
+      .form-input-wrapper svg {
+        left: 12px;
+        width: 16px;
+        height: 16px;
+      }
+      .btn-submit {
+        padding: 14px;
+        font-size: 0.95rem;
+      }
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .testimonial-card {
+        padding: 24px;
+      }
+      .faq-header {
+        padding: 16px 18px;
+      }
+      .faq-question {
+        font-size: 0.95rem;
+      }
+      .faq-item.active .faq-body {
+        padding: 12px 18px 18px 18px;
+      }
+      .admin-card {
+        padding: 20px 16px;
+      }
+      .admin-table {
+        font-size: 0.8rem;
+        table-layout: auto;
+      }
+      .admin-table th, .admin-table td {
+        padding: 10px 12px;
+      }
+      .client-name {
+        font-size: 0.85rem;
+      }
+      .client-phone-link {
+        font-size: 0.75rem;
+      }
+      .float-widgets {
+        bottom: 20px;
+        right: 20px;
+        gap: 10px;
+      }
+      .float-btn {
+        width: 48px;
+        height: 48px;
+      }
+      .float-btn svg {
+        width: 20px;
+        height: 20px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      footer {
+        padding: 40px 16px 30px 16px;
+      }
+      .logo span {
+        font-size: 1.25rem;
       }
     }
   </style>
